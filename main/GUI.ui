@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>Form</class>
+  <widget class="QWidget" name="Form">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1226</width>
+        <height>614</height>
+      </rect>
+    </property>
+    <property name="windowTitle">
+      <string>Form</string>
+    </property>
+    <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(x0:0, y1:0,x0:1, y2:1, stop:0 rgb(20,
+        32, 44), stop:1 rgb(37, 85, 117));
+        border-radius:20px </string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_4">
+      <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <item>
+                <spacer name="horizontalSpacer">
+                  <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                    <size>
+                      <width>40</width>
+                      <height>20</height>
+                    </size>
+                  </property>
+                </spacer>
+              </item>
+              <item>
+                <widget class="QLabel" name="Title">
+                  <property name="styleSheet">
+                    <string notr="true">font: 25pt &quot;楷体&quot;;
+                      border:none;
+                      background-color: rgba(255, 255, 255, 0);
+                      color: rgb(255, 255, 255);
+                    </string>
+                  </property>
+                  <property name="text">
+                    <string>贝叶斯融合模型建模与推理</string>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <spacer name="horizontalSpacer_2">
+                  <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                    <size>
+                      <width>40</width>
+                      <height>20</height>
+                    </size>
+                  </property>
+                </spacer>
+              </item>
+            </layout>
+          </item>
+          <item row="1" column="0">
+            <layout class="QGridLayout" name="gridLayout_2" rowstretch="1,8" rowminimumheight="1,8">
+              <item row="0" column="0">
+                <layout class="QVBoxLayout" name="verticalLayout_2">
+                  <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout">
+                      <item>
+                        <layout class="QVBoxLayout" name="verticalLayout">
+                          <item>
+                            <widget class="QPushButton" name="NeuralButton">
+                              <property name="styleSheet">
+                                <string notr="true">QPushButton{
+                                  padding:8px;
+                                  color:rgb(0,0,0);
+                                  background-color:rgb(226, 230, 255);
+                                  font: 12pt &quot;楷体&quot;;
+                                  border-radius:16px;
+                                  }
+                                  QPushButton:hover{
+                                  color: rgb(0, 0, 0);
+                                  background-color: rgb(43, 162, 239);
+                                  }
+                                </string>
+                              </property>
+                              <property name="text">
+                                <string>神经网络融合</string>
+                              </property>
+                            </widget>
+                          </item>
+                          <item>
+                            <widget class="QPushButton" name="LoadmonitorData">
+                              <property name="styleSheet">
+                                <string notr="true">QPushButton{
+                                  padding:8px;
+                                  color:rgb(0,0,0);
+                                  background-color:rgb(226, 230, 255);
+                                  font: 12pt &quot;楷体&quot;;
+                                  border-radius:16px;
+                                  }
+                                  QPushButton:hover{
+                                  color: rgb(0, 0, 0);
+                                  background-color: rgb(43, 162, 239);
+                                  }
+                                </string>
+                              </property>
+                              <property name="text">
+                                <string>导入监测数据</string>
+                              </property>
+                            </widget>
+                          </item>
+                          <item>
+                            <widget class="QPushButton" name="ObserveData">
+                              <property name="styleSheet">
+                                <string notr="true">QPushButton{
+                                  padding:8px;
+                                  color:rgb(0,0,0);
+                                  background-color:rgb(226, 230, 255);
+                                  font: 12pt &quot;楷体&quot;;
+                                  border-radius:16px;
+                                  }
+                                  QPushButton:hover{
+                                  color: rgb(0, 0, 0);
+                                  background-color: rgb(43, 162, 239);
+                                  }
+                                </string>
+                              </property>
+                              <property name="text">
+                                <string>观测数据设置</string>
+                              </property>
+                            </widget>
+                          </item>
+                          <item>
+                            <widget class="QPushButton" name="clearEvidence">
+                              <property name="styleSheet">
+                                <string notr="true">QPushButton{
+                                  padding:8px;
+                                  color:rgb(0,0,0);
+                                  background-color:rgb(226, 230, 255);
+                                  font: 12pt &quot;楷体&quot;;
+                                  border-radius:16px;
+                                  }
+                                  QPushButton:hover{
+                                  color: rgb(0, 0, 0);
+                                  background-color: rgb(43, 162, 239);
+                                  }
+                                </string>
+                              </property>
+                              <property name="text">
+                                <string>清除证据</string>
+                              </property>
+                            </widget>
+                          </item>
+                        </layout>
+                      </item>
+                      <item>
+                        <widget class="QTextBrowser" name="EvidenceBrowser">
+                          <property name="styleSheet">
+                            <string notr="true">color: rgb(0, 0, 0);
+                              font: 12pt &quot;楷体&quot;;
+                              background-color:qlineargradient(spread:reflect, x1:0.0166818, y1:0,
+                              x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:0.931818 rgba(60,
+                              88, 112, 255));
+                              border:0px solid red;
+                              border-radius:12px
+
+                            </string>
+                          </property>
+                        </widget>
+                      </item>
+                    </layout>
+                  </item>
+                  <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,5">
+                      <property name="spacing">
+                        <number>0</number>
+                      </property>
+                      <item>
+                        <widget class="QPushButton" name="inferbutton">
+                          <property name="styleSheet">
+                            <string notr="true">QPushButton{
+                              padding:8px;
+                              color:rgb(0,0,0);
+                              background-color:rgb(226, 230, 255);
+                              font: 12pt &quot;楷体&quot;;
+                              border-radius:16px;
+                              }
+                              QPushButton:hover{
+                              color: rgb(0, 0, 0);
+                              background-color: rgb(43, 162, 239);
+                              }
+                            </string>
+                          </property>
+                          <property name="text">
+                            <string>融合推理</string>
+                          </property>
+                        </widget>
+                      </item>
+                      <item>
+                        <widget class="QComboBox" name="queryCombobox">
+                          <property name="styleSheet">
+                            <string notr="true">font: 12pt &quot;楷体&quot;;
+                              color: rgb(0, 0, 0);
+                              selection-color: rgb(255, 0, 0);
+                              background-color: rgb(255, 255, 255);</string>
+                          </property>
+                        </widget>
+                      </item>
+                    </layout>
+                  </item>
+                </layout>
+              </item>
+              <item row="1" column="0">
+                <layout class="QGridLayout" name="gridLayout">
+                  <item row="0" column="0">
+                    <widget class="QFrame" name="frame">
+                      <property name="styleSheet">
+                        <string notr="true">QFrame{
+                          background-color:qlineargradient(spread:reflect, x1:0.0166818, y1:0, x2:1,
+                          y2:1, stop:0 rgba(255, 255, 255, 255), stop:0.931818 rgba(60, 88, 112,
+                          255));
+                          border:0px solid red;
+                          color: rgb(255, 254, 255);
+                          border-radius:12px
+                          }</string>
+                      </property>
+                      <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </item>
+            </layout>
+          </item>
+        </layout>
+      </item>
+    </layout>
+  </widget>
+  <resources />
+  <connections />
+</ui>

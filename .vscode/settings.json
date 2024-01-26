@@ -1,0 +1,52 @@
+{
+  "python.languageServer": "Pylance",
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportShadowedImports": "none"
+  },
+  "terminal.integrated.env.windows": {
+    "PYTHONPATH": "${workspaceFolder};${env:PYTHONPATH}"
+  },
+  "workbench.colorTheme": "Quiet Light",
+  "editor.fontLigatures": false,
+  "editor.fontSize": 16,
+  "editor.codeActionsOnSave": {},
+  "editor.tokenColorCustomizations": {
+    // "comments": "#5c9100", // 注释
+    // "keywords": "#416ed8", // 关键字
+    // "variables": "#000000", // 变量名
+    // "strings": "#db6c11b0", // 字符串
+    // "functions": "#382ce4c9", // 函数名
+    // "numbers": "#9d1fbd", // 数字
+    "textMateRules": [
+      {
+        "scope": [
+          //following will be in italic
+          "comment",
+          "function",
+          "entity.name.type.class", //class names
+          "constant", //String, Number, Boolean…, this, super
+          "storage", //static keyword
+          "keyword" //import, export, return…
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  "editor.fontFamily": "Consolas",
+  "terminal.integrated.fontFamily": "Consolas",
+  "window.zoomLevel": 0,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "launch": {
+    "configurations": [],
+    "compounds": []
+  },
+  "editor.fontVariations": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "python.pythonPath": "D:\\anaconda3\\envs\\pytorch\\python.exe",
+}
